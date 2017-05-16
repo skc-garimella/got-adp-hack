@@ -18,6 +18,7 @@ const cors = require('cors');
 app.use(morgan('combined'));
 app.use(cors());
 app.use(bodyParser.json({ type: '*/*' }));
+app.use(express.static('www'));
 router(app);
 
 // Server Setup
